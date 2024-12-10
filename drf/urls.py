@@ -23,3 +23,9 @@ urlpatterns = [
     path('api/v1/', include('api.urls')),
     path('docs/',include_docs_urls(title='Documentacion API'))
 ]
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('api/v1/', include('api.urls')),
+    path('docs/', include_docs_urls(title='student API'))
+]
